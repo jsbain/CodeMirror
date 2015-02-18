@@ -33,6 +33,7 @@ CodeMirror.on(modeInput, "keypress", function(e) {
 });
 function change() {
    editor.setOption("mode", modeInput.value);
+   CodeMirror.modeURL = "../mode/%N/%N.js";
    CodeMirror.autoLoadMode(editor, modeInput.value);
 }
 </script>
